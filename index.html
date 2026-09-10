@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>揭阳新冠-本地防护要点、就医指引与常见问题解答</title>
+<meta name="description" content="揭阳新冠相关实用信息汇总：了解新冠病毒的基本知识、揭阳本地日常防护要点、出现症状后的就医与用药注意事项、重点人群照护以及常见问题解答。">
+<meta name="keywords" content="揭阳新冠,揭阳新冠疫情,揭阳新冠防护,揭阳新冠就医,新冠病毒防护,揭阳健康">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --main:#0f6e63;
+    --main-dark:#0a4f47;
+    --main-light:#e6f4f1;
+    --accent:#c8622a;
+    --text:#1f2b2a;
+    --text-soft:#556664;
+    --line:#d9e6e3;
+    --bg:#f5faf9;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 6px 22px rgba(15,110,99,.09);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- 顶部提示条 ---------- */
+  .topbar{
+    background:var(--main-dark);
+    color:#d8ece8;
+    font-size:13px;
+    padding:7px 0;
+  }
+  .topbar .wrap{
+    display:flex;
+    justify-content:space-between;
+    gap:14px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .topbar strong{color:#fff;font-weight:600;}
+
+  /* ---------- 页眉 ---------- */
+  header.site-head{
+    background:var(--white);
+    border-bottom:1px solid var(--line);
+    position:sticky;
+    top:0;
+    z-index:50;
+    box-shadow:0 2px 10px rgba(15,110,99,.05);
+  }
+  .head-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    padding:14px 0;
+    flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:42px;height:42px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--main),#2fa392);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:19px;
+    letter-spacing:1px;
+    flex-shrink:0;
+  }
+  .brand-text b{display:block;font-size:19px;letter-spacing:.5px;}
+  .brand-text span{display:block;font-size:12px;color:var(--text-soft);letter-spacing:1px;}
+  nav.main-nav ul{
+    list-style:none;
+    display:flex;
+    gap:6px;
+    flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    display:block;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:15px;
+    color:var(--text-soft);
+    transition:.2s;
+  }
+  nav.main-nav a:hover,nav.main-nav a.active{
+    background:var(--main-light);
+    color:var(--main-dark);
+    font-weight:600;
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:linear-gradient(160deg,#0f6e63 0%,#137a6d 45%,#1c8f7f 100%);
+    color:#fff;
+    padding:56px 0 62px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    right:-120px;top:-120px;
+    width:380px;height:380px;
+    border-radius:50%;
+    background:rgba(255,255,255,.07);
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    left:-80px;bottom:-140px;
+    width:300px;height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,.05);
+  }
+  .hero-inner{position:relative;z-index:2;max-width:760px;}
+  .hero .tag{
+    display:inline-block;
+    background:rgba(255,255,255,.16);
+    border:1px solid rgba(255,255,255,.3);
+    padding:5px 14px;
+    border-radius:20px;
+    font-size:13px;
+    letter-spacing:1px;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(26px,4.2vw,40px);
+    line-height:1.35;
+    letter-spacing:1px;
+    margin-bottom:16px;
+    font-weight:700;
+  }
+  .hero p.lead{
+    font-size:16px;
+    color:#d9efeb;
+    margin-bottom:26px;
+    max-width:640px;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;
+    padding:11px 26px;
+    border-radius:26px;
+    font-size:15px;
+    font-weight:600;
+    transition:.2s;
+    border:1px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{background:#fff;color:var(--main-dark);}
+  .btn-primary:hover{background:#e6f4f1;transform:translateY(-2px);}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);}
+  .btn-ghost:hover{background:rgba(255,255,255,.14);}
+  .hero-facts{
+    display:flex;
+    gap:34px;
+    flex-wrap:wrap;
+    margin-top:38px;
+    padding-top:26px;
+    border-top:1px solid rgba(255,255,255,.2);
+  }
+  .hero-facts div b{display:block;font-size:20px;letter-spacing:.5px;}
+  .hero-facts div span{font-size:13px;color:#c8e6e1;}
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:52px 0;}
+  .sec-head{margin-bottom:28px;}
+  .sec-head .kicker{
+    display:inline-block;
+    font-size:13px;
+    color:var(--accent);
+    letter-spacing:2px;
+    font-weight:600;
+    margin-bottom:8px;
+  }
+  .sec-head h2{
+    font-size:clamp(21px,3vw,27px);
+    letter-spacing:.5px;
+    color:var(--main-dark);
+  }
+  .sec-head p{color:var(--text-soft);font-size:15px;margin-top:8px;max-width:780px;}
+
+  /* ---------- 知识卡片 ---------- */
+  .grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    box-shadow:var(--shadow);
+    transition:.25s;
+  }
+  .card:hover{transform:translateY(-4px);border-color:#b9dcd6;}
+  .card .ico{
+    width:44px;height:44px;
+    border-radius:12px;
+    background:var(--main-light);
+    color:var(--main-dark);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:14px;
+  }
+  .card h3{font-size:17px;margin-bottom:10px;color:var(--main-dark);}
+  .card p{font-size:14.5px;color:var(--text-soft);}
+  .card ul{margin:10px 0 0 18px;font-size:14.5px;color:var(--text-soft);}
+  .card ul li{margin-bottom:6px;}
+
+  /* ---------- 防护要点（左文右列） ---------- */
+  .protect{
+    background:var(--white);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .protect-layout{
+    display:grid;
+    grid-template-columns:1.25fr 1fr;
+    gap:40px;
+    align-items:start;
+  }
+  .protect-text h2{font-size:clamp(21px,3vw,26px);color:var(--main-dark);margin-bottom:14px;}
+  .protect-text p{color:var(--text-soft);font-size:15px;margin-bottom:14px;}
+  .steps{list-style:none;counter-reset:s;}
+  .steps li{
+    counter-increment:s;
+    position:relative;
+    padding:12px 0 12px 46px;
+    border-bottom:1px dashed var(--line);
+    font-size:15px;
+  }
+  .steps li:last-child{border-bottom:none;}
+  .steps li::before{
+    content:counter(s);
+    position:absolute;
+    left:0;top:12px;
+    width:28px;height:28px;
+    border-radius:50%;
+    background:var(--main);
+    color:#fff;
+    font-size:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:600;
+  }
+  .steps li b{color:var(--main-dark);}
+  .aside-box{
+    background:linear-gradient(180deg,#f0faf8,#e6f4f1);
+    border:1px solid #cfe8e3;
+    border-radius:var(--radius);
+    padding:24px 22px;
+  }
+  .aside-box h3{
+    font-size:16px;
+    color:var(--main-dark);
+    margin-bottom:14px;
+    padding-bottom:10px;
+    border-bottom:1px solid #cfe8e3;
+  }
+  .aside-box dl{font-size:14.5px;}
+  .aside-box dt{font-weight:600;color:var(--main-dark);margin-top:12px;}
+  .aside-box dt:first-child{margin-top:0;}
+  .aside-box dd{color:var(--text-soft);}
+
+  /* ---------- 就医指引 ---------- */
+  .care-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+  .care-item{
+    background:var(--white);
+    border-left:4px solid var(--main);
+    border-radius:10px;
+    padding:20px 22px;
+    box-shadow:var(--shadow);
+  }
+  .care-item h3{font-size:16.5px;color:var(--main-dark);margin-bottom:8px;}
+  .care-item p{font-size:14.5px;color:var(--text-soft);}
+  .care-item.warn{border-left-color:var(--accent);}
+  .care-item.warn h3{color:var(--accent);}
+
+  /* ---------- 人群照护 ---------- */
+  .people{
+    background:var(--white);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .people-tabs{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:24px;
+  }
+  .people-tabs button{
+    padding:9px 20px;
+    border-radius:22px;
+    border:1px solid var(--line);
+    background:var(--bg);
+    color:var(--text-soft);
+    font-size:14.5px;
+    cursor:pointer;
+    transition:.2s;
+    font-family:inherit;
+  }
+  .people-tabs button.active{
+    background:var(--main);
+    border-color:var(--main);
+    color:#fff;
+    font-weight:600;
+  }
+  .people-panel{
+    display:none;
+    background:var(--bg);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 24px;
+  }
+  .people-panel.show{display:block;}
+  .people-panel h3{font-size:17px;color:var(--main-dark);margin-bottom:10px;}
+  .people-panel ul{margin:8px 0 0 20px;color:var(--text-soft);font-size:15px;}
+  .people-panel ul li{margin-bottom:8px;}
+
+  /* ---------- 常见问题 ---------- */
+  .faq-list{display:grid;gap:12px;}
+  .faq-item{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .faq-q{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    padding:17px 22px;
+    font-size:15.5px;
+    font-weight:600;
+    color:var(--main-dark);
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:14px;
+    font-family:inherit;
+    line-height:1.6;
+  }
+  .faq-q .plus{
+    flex-shrink:0;
+    width:22px;height:22px;
+    border-radius:50%;
+    background:var(--main-light);
+    color:var(--main-dark);
+    display:flex;align-items:center;justify-content:center;
+    font-size:15px;
+    transition:.25s;
+  }
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);background:var(--main);color:#fff;}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+    padding:0 22px;
+  }
+  .faq-item.open .faq-a{max-height:520px;}
+  .faq-a p{
+    font-size:14.8px;
+    color:var(--text-soft);
+    padding-bottom:18px;
+    border-top:1px dashed var(--line);
+    padding-top:14px;
+  }
+
+  /* ---------- 提示区 ---------- */
+  .notice{
+    background:var(--main-light);
+    border:1px dashed #9fcfc7;
+    border-radius:var(--radius);
+    padding:22px 24px;
+    font-size:14.5px;
+    color:var(--main-dark);
+  }
+  .notice strong{display:block;margin-bottom:6px;font-size:15.5px;}
+
+  /* ---------- 页脚 ---------- */
+  footer.site-foot{
+    background:#0d3b36;
+    color:#a9c9c4;
+    padding:44px 0 22px;
+    font-size:14px;
+  }
+  .foot-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:34px;
+    padding-bottom:28px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  .foot-grid h4{color:#fff;font-size:15.5px;margin-bottom:14px;}
+  .foot-grid p{font-size:13.8px;line-height:1.85;}
+  .foot-grid ul{list-style:none;}
+  .foot-grid ul li{margin-bottom:9px;}
+  .foot-grid ul a:hover{color:#fff;}
+  .foot-bottom{
+    padding-top:18px;
+    display:flex;
+    justify-content:space-between;
+    gap:14px;
+    flex-wrap:wrap;
+    font-size:13px;
+    color:#7fa9a3;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    .grid-3{grid-template-columns:repeat(2,1fr);}
+    .protect-layout{grid-template-columns:1fr;gap:28px;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:680px){
+    body{font-size:15.5px;}
+    .head-inner{padding:12px 0;}
+    nav.main-nav ul{gap:2px;}
+    nav.main-nav a{padding:7px 11px;font-size:14px;}
+    .hero{padding:40px 0 46px;}
+    .hero-facts{gap:22px;}
+    section{padding:38px 0;}
+    .grid-3{grid-template-columns:1fr;}
+    .care-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .topbar .wrap{font-size:12px;}
+    .brand-text span{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><strong>健康提示：</strong>出现发热、咳嗽等症状时，建议先做好自我隔离与休息，避免带病上班上学。</span>
+    <span>揭阳本地健康信息参考</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <div class="brand-mark">揭</div>
+      <div class="brand-text">
+        <b>揭阳新冠健康参考</b>
+        <span>防护 · 就医 · 照护</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#know" class="active">基础认识</a></li>
+        <li><a href="#protect">日常防护</a></li>
+        <li><a href="#care">就医用药</a></li>
+        <li><a href="#people">人群照护</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <span class="tag">揭阳本地 · 新冠防护实用参考</span>
+      <h1>揭阳新冠防护与就医实用参考</h1>
+      <p class="lead">
+        面对新冠病毒，多数人关心的是：现在还需要注意什么、出现症状怎么办、家里有老人小孩该如何照护。
+        本页围绕揭阳本地居民日常可能遇到的情况，整理基础认识、防护要点、就医用药原则和重点人群照护建议，
+        帮助你在需要时快速找到可操作的信息。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#protect">查看防护要点</a>
+        <a class="btn btn-ghost" href="#care">出现症状怎么办</a>
+      </div>
+      <div class="hero-facts">
+        <div><b>勤洗手 · 常通风</b><span>日常基础防护</span></div>
+        <div><b>症状加重及时就医</b><span>不自行硬扛</span></div>
+        <div><b>关注官方通报</b><span>以权威信息为准</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 基础认识 -->
+  <section id="know">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">基础认识</span>
+        <h2>先了解新冠病毒的基本特点</h2>
+        <p>新冠病毒属于冠状病毒家族，主要通过呼吸道飞沫和密切接触传播，在相对封闭、人员密集的环境中传播风险更高。了解它的传播方式和常见症状，有助于判断自己该采取哪些措施。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="ico">传</div>
+          <h3>传播途径</h3>
+          <p>以呼吸道飞沫和密切接触传播为主，在通风不良的室内环境中，气溶胶传播的风险会上升。</p>
+          <ul>
+            <li>近距离交谈、共处密闭空间</li>
+            <li>接触被污染的物品后触摸口鼻眼</li>
+            <li>人群密集、空气不流通的场所</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico">症</div>
+          <h3>常见症状</h3>
+          <p>感染后的表现因人而异，部分人症状轻微甚至无明显不适，也有人会出现较明显的不适。</p>
+          <ul>
+            <li>发热、咽痛、咳嗽、乏力</li>
+            <li>鼻塞流涕、肌肉酸痛</li>
+            <li>少数人出现嗅觉或味觉变化</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico">潜</div>
+          <h3>潜伏与病程</h3>
+          <p>从接触到出现症状通常有一段时间，多数人病程在一周左右逐步缓解，咳嗽等表现可能持续更久。</p>
+          <ul>
+            <li>症状期间注意休息与补水</li>
+            <li>病程中如明显加重应就医</li>
+            <li>恢复期避免立即高强度活动</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 日常防护 -->
+  <section class="protect" id="protect">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">日常防护</span>
+        <h2>日常生活中可以做到的防护要点</h2>
+        <p>防护不需要复杂操作，关键在于把几件简单的事长期坚持下来，尤其是在人员流动较大的时段和场所。</p>
+      </div>
+      <div class="protect-layout">
+        <div class="protect-text">
+          <ol class="steps">
+            <li><b>规范佩戴口罩。</b>在人群密集、通风较差的场所，如公交、市场、医院等，建议佩戴口罩，并注意及时更换。</li>
+            <li><b>保持手部清洁。</b>外出回家、饭前便后、接触公共设施后，用流动水和洗手液洗手，或使用免洗手消毒用品。</li>
+            <li><b>注意室内通风。</b>每天开窗通风数次，每次不少于半小时，降低室内空气中病原体的浓度。</li>
+            <li><b>减少不必要的聚集。</b>在呼吸道疾病高发时段，尽量减少前往人多拥挤、空气不流通的场所。</li>
+            <li><b>保持规律作息。</b>充足睡眠、均衡饮食和适度运动，有助于维持良好的身体状态。</li>
+            <li><b>做好健康监测。</b>家中有老人、儿童或慢性病患者的，可留意其体温和身体状态变化。</li>
+          </ol>
+        </div>
+        <aside class="aside-box">
+          <h3>揭阳本地生活场景提示</h3>
+          <dl>
+            <dt>公共交通出行</dt>
+            <dd>乘坐公交、网约车时保持车窗适度通风，人多时佩戴口罩。</dd>
+            <dt>菜市场与商超</dt>
+            <dd>人流密集时段尽量缩短停留时间，选购生鲜后及时洗手。</dd>
+            <dt>医院就诊</dt>
+            <dd>全程佩戴口罩，按医院指引有序候诊，减少在诊区长时间逗留。</dd>
+            <dt>学校与办公场所</dt>
+            <dd>出现明显症状时建议居家休息，避免带病上课上班。</dd>
+            <dt>家庭聚餐</dt>
+            <dd>使用公筷公勺，保持室内通风，身体不适者尽量不参加。</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 就医用药 -->
+  <section id="care">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">就医与用药</span>
+        <h2>出现症状后，可以这样处理</h2>
+        <p>多数人感染后症状较轻，可居家休息观察；但如果出现持续加重或危险信号，应及时前往医疗机构就诊。</p>
+      </div>
+      <div class="care-grid">
+        <div class="care-item">
+          <h3>居家观察怎么做</h3>
+          <p>尽量单独居住一室，减少与家人近距离接触；注意休息、多饮温水，定时测量体温，记录症状变化。房间保持通风，餐具和毛巾单独使用。</p>
+        </div>
+        <div class="care-item">
+          <h3>用药的基本原则</h3>
+          <p>发热、咽痛等不适可在医生或药师指导下使用对症药物，不要自行叠加多种成分相似的感冒药，避免重复用药。抗菌药物对病毒本身无效，不建议自行服用。</p>
+        </div>
+        <div class="care-item warn">
+          <h3>这些情况应尽快就医</h3>
+          <p>持续高热不退、呼吸困难或气促、胸痛、意识模糊、口唇发紫、严重呕吐腹泻导致明显脱水，以及原有慢性病明显加重时，应尽快前往医院就诊。</p>
+        </div>
+        <div class="care-item warn">
+          <h3>重点人群要更早关注</h3>
+          <p>老年人、孕产妇、婴幼儿以及有慢性基础疾病的人群，感染后发展为较重情况的风险相对更高，出现症状后建议尽早咨询医生，不要拖延。</p>
+        </div>
+      </div>
+      <div class="notice" style="margin-top:24px;">
+        <strong>关于信息获取</strong>
+        疫情相关的最新情况和防控要求，请以卫生健康部门、疾控机构和本地官方发布渠道的通报为准。本页内容为一般性健康知识整理，不能替代医生的面诊和处方。
+      </div>
+    </div>
+  </section>
+
+  <!-- 人群照护 -->
+  <section class="people" id="people">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">重点人群</span>
+        <h2>家中不同成员，照护重点不一样</h2>
+        <p>同一个家庭里，老人、儿童、孕产妇和普通成年人的照护方式存在差异，可以按人群分别留意。</p>
+      </div>
+
+      <div class="people-tabs" role="tablist">
+        <button class="active" data-target="p-old">老年人</button>
+        <button data-target="p-child">儿童</button>
+        <button data-target="p-preg">孕产妇</button>
+        <button data-target="p-adult">成年人</button>
+      </div>
+
+      <div class="people-panel show" id="p-old">
+        <h3>老年人照护要点</h3>
+        <ul>
+          <li>老年人症状有时不典型，可能以精神变差、食欲下降、乏力为主要表现，家人需多观察。</li>
+          <li>有高血压、糖尿病、心肺疾病等基础病的，日常用药不要随意停用，出现异常及时联系医生。</li>
+          <li>居家期间注意防跌倒，保持地面干燥，夜间留一盏小灯。</li>
+          <li>保证饮水与进食，避免因食欲差导致脱水和营养不足。</li>
+        </ul>
+      </div>
+
+      <div class="people-panel" id="p-child">
+        <h3>儿童照护要点</h3>
+        <ul>
+          <li>儿童用药需按年龄和体重计算，务必在医生或药师指导下使用，不要直接减半使用成人药物。</li>
+          <li>注意观察精神状态、进食量和尿量，精神差、持续高热、呼吸急促时应及时就医。</li>
+          <li>居家期间保持室内通风，玩具和常用物品定期清洁。</li>
+          <li>恢复后逐步恢复活动量，不必急于回到高强度的学习或运动节奏。</li>
+        </ul>
+      </div>
+
+      <div class="people-panel" id="p-preg">
+        <h3>孕产妇照护要点</h3>
+        <ul>
+          <li>孕期出现发热、咳嗽等不适，建议尽早咨询产科或内科医生，不要自行用药。</li>
+          <li>注意监测胎动情况，出现胎动异常、腹痛、阴道出血或流水等情况应立即就医。</li>
+          <li>保持情绪平稳，规律作息，按时完成产检安排。</li>
+          <li>哺乳期如需用药，应主动告知医生哺乳情况，由医生评估后决定。</li>
+        </ul>
+      </div>
+
+      <div class="people-panel" id="p-adult">
+        <h3>成年人自我照护要点</h3>
+        <ul>
+          <li>症状较轻时可居家休息，保证睡眠和饮水，避免熬夜和剧烈运动。</li>
+          <li>居家期间尽量与家人分餐、分房，共用空间佩戴口罩。</li>
+          <li>症状缓解后不要立即恢复高强度工作，给身体留出恢复时间。</li>
+          <li>如症状反复或持续不缓解，及时就医排查其他原因。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">常见问题</span>
+        <h2>关于揭阳新冠，大家常问的几个问题</h2>
+        <p>以下回答基于一般性健康知识整理，具体情况请结合自身状况并咨询专业医务人员。</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">现在还需要戴口罩吗？<span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>是否需要佩戴口罩，主要看场景和个人情况。在人群密集、通风不良的室内场所，或自身出现呼吸道症状时，佩戴口罩能降低传播风险。如果所在环境空旷、人员稀少，可根据自身情况决定。具体建议可参考当地卫生健康部门的指引。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">出现发热咳嗽，一定要去医院吗？<span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>不一定。症状较轻、精神状态良好、能正常进食饮水的，可以先居家休息观察。但老年人、孕产妇、婴幼儿和有慢性基础病的人群，建议尽早咨询医生。如果出现呼吸困难、持续高热、意识改变等危险信号，应尽快就医。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">家里有人感染，其他人怎么防护？<span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>尽量安排单独房间和独立卫生间，如条件不允许，需保持距离并佩戴口罩。餐具、毛巾、水杯分开使用，公共区域勤通风、勤擦拭。照顾者接触后要及时洗手，垃圾密封处理。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">康复后多久能恢复正常运动？<span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>恢复期因人而异，建议循序渐进。症状完全缓解后，可先从散步等低强度活动开始，观察身体反应，再逐步增加强度。如果活动后出现明显心慌、气促或极度疲劳，应减少运动量并咨询医生。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">在哪里可以获取揭阳本地的权威信息？<span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>建议关注揭阳市及各区县卫生健康部门、疾控中心的官方发布渠道，以及本地主流媒体发布的通报。涉及具体防控要求、就诊安排等信息，以官方最新发布为准。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">日常需要囤药吗？<span class="plus">+</span></button>
+          <div class="faq-a">
+            <p>不建议大量囤积药品。家中可常备体温计和少量对症药物，注意查看有效期。用药前仔细阅读说明书，避免多种含相同成分的药物同时服用。有疑问时咨询医生或药师。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 结尾提示 -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="notice">
+        <strong>写在最后</strong>
+        面对新冠病毒，保持理性、做好日常防护、了解基本的应对方法，比过度紧张更有帮助。本页内容会随着对疾病认识的更新而调整，涉及个人健康的判断，请以专业医务人员的意见为准。
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>揭阳新冠健康参考</h4>
+        <p>围绕新冠病毒的基础知识、日常防护、就医用药和重点人群照护，整理面向揭阳本地居民的一般性健康信息，帮助大家在需要时快速找到可参考的内容。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#know">基础认识</a></li>
+          <li><a href="#protect">日常防护</a></li>
+          <li><a href="#care">就医与用药</a></li>
+          <li><a href="#people">重点人群照护</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>信息说明</h4>
+        <ul>
+          <li>内容为健康知识整理</li>
+          <li>不替代医生面诊与处方</li>
+          <li>最新情况以官方通报为准</li>
+          <li>如有紧急症状请及时就医</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 揭阳新冠健康参考 · 一般性健康信息整理</span>
+      <span>身体不适请及时就医，以专业医疗意见为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 常见问题折叠
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+      if(!isOpen){ item.classList.add('open'); }
+    });
+  });
+
+  // 人群标签切换
+  var tabBtns = document.querySelectorAll('.people-tabs button');
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      document.querySelectorAll('.people-panel').forEach(function(p){ p.classList.remove('show'); });
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      if(target){ target.classList.add('show'); }
+    });
+  });
+
+  // 导航高亮
+  var navLinks = document.querySelectorAll('nav.main-nav a');
+  navLinks.forEach(function(link){
+    link.addEventListener('click', function(){
+      navLinks.forEach(function(l){ l.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+  </html>
